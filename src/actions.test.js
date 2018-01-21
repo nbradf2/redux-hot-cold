@@ -16,6 +16,7 @@ describe('generateAuralUpdate', () => {
 describe('restartGame', () => {
 	it('Should return the action', () => {
 		const correctAnswer = '10';
+		const action = restartGame(correctAnswer);
 		expect(action.type).toEqual(RESTART_GAME);
 	});
 });
